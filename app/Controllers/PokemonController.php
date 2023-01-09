@@ -20,4 +20,13 @@ class PokemonController extends CoreController {
 
         $this->show('pokemon', ['pokemon' => $pokemon, 'types' => $types]);
     }
+
+    public function typeDetail($params) {
+        $typeId = $params['type_id'];
+
+        $pokemonModel = new Pokemon();
+        $pokemonsType = $pokemonModel->findAllByTypeId($typeId);
+
+        $this->show('typeDetail', ['pokemonsType' => $pokemonsType]);
+    }
 }

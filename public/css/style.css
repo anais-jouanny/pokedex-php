@@ -139,3 +139,32 @@ p {
     padding: 1.3em;
     text-align: center;
 }
+
+/* TYPE DETAILS PAGE */
+#typeDetail {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #982C2C;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+.card img {
+    height: 20em;
+}
+
+.card a {
+    color: #EFE3E3;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: cadetblue;
+    font-size: larger;
+}

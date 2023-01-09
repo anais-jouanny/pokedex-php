@@ -29,6 +29,15 @@ class Pokemon {
         return $pokemon;
     }
 
+    public function findAllByTypeId($id) {
+        $sql = "SELECT pokemon.* FROM pokemon JOIN pokemon_type ON pokemon.number = pokemon_type.pokemon_number JOIN type ON pokemon_type.type_id = type.id WHERE type.id=$id";
+        $pdo = Database::getPDO();
+        $pdoStatement = $pdo->query($sql);
+
+        $pokemonType = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Pokemon');
+        return $pokemonType;
+    }
+
 
     /**
      * Get the value of id

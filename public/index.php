@@ -17,7 +17,7 @@ $router->setBasePath($_SERVER['BASE_URI']);
 $router->map('GET', '/', ['method' => 'home', 'controller' => 'PokemonController'], 'home_main');
 $router->map('GET', '/pokemon/[i:pok_number]', ['method' => 'pokemonDetail', 'controller' => 'PokemonController'], 'pokemonDetail_main');
 $router->map('GET', '/types', ['method' => 'types', 'controller' => 'TypeController'], 'types_main');
-$router->map('GET', '/types/[i:type_id]', ['method' => 'typeDetail', 'controller' => 'TypeController'], 'typeDetail_main');
+$router->map('GET', '/types/[i:type_id]', ['method' => 'typeDetail', 'controller' => 'PokemonController'], 'typeDetail_main');
 
 // Match
 $match = $router->match();
