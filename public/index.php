@@ -9,7 +9,6 @@ require __DIR__ . "/../app/Models/Type.php";
 // Initialisation Altorouter
 $router = new AltoRouter();
 $router->setBasePath($_SERVER['BASE_URI']);
-// var_dump($router);
 
 // Map
 $router->map('GET', '/', ['method' => 'home', 'controller' => 'MainController'], 'home_main');
