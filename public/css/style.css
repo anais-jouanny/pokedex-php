@@ -52,3 +52,72 @@ nav a {
     color: cadetblue;
     font-size: larger;
 }
+
+
+/* POKEMON DETAILS PAGE */
+
+h2 {
+    color: #EFE3E3;
+    text-align: center;
+    font-size: 2em;
+}
+
+.poke-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#card-poke {
+    background-color: #982C2C;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    width: 35%;
+}
+
+#card-poke a {
+    text-decoration: none;
+    color: white;
+    padding: 0.35em;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+h3, h4 {
+    font-weight: bolder ;
+}
+
+table {
+    border-spacing: 30px 10px ;
+}
+
+.gauge {
+    width: 72%;
+}
+
+.wrapper {
+    background-color: #632B2B;
+    border-radius: 5px;
+    width: 100%;
+    height: 20px;
+}
+
+.progressbar {
+    background-color: white;
+    border-radius: 5px;
+    height: 20px;
+}
+
+.home-link {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+}

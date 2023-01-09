@@ -20,6 +20,15 @@ class Pokemon {
         return $pokemons;
     }
 
+    public function find($id) {
+        $sql = "SELECT * FROM pokemon WHERE number=$id";
+        $pdo = Database::getPDO();
+
+        $pdoStatement = $pdo->query($sql);
+        $pokemon = $pdoStatement->fetchObject('Pokemon');
+        return $pokemon;
+    }
+
 
     /**
      * Get the value of id

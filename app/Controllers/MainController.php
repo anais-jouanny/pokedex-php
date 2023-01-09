@@ -9,6 +9,18 @@ class MainController {
         $this->show('home', ['pokemonList' => $pokemons]);
     }
 
+    public function pokemonDetail($urlParam) {
+        $pokId = $urlParam['pok_number'];
+
+        $pokemonModel = new Pokemon();
+        $pokemon = $pokemonModel->find($pokId);
+
+        $typeModel = new Type();
+        $types = $typeModel->findAllByPokemonNum($pokId);
+
+        $this->show('pokemon', ['pokemon' => $pokemon, 'types' => $types]);
+    }
+
     public function error404() {
         $this->show('error404');
     }
