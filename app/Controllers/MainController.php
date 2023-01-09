@@ -21,6 +21,13 @@ class MainController {
         $this->show('pokemon', ['pokemon' => $pokemon, 'types' => $types]);
     }
 
+    public function types() {
+        $typeModel = new Type();
+        $types = $typeModel->findAll();
+
+        $this->show('types', ['types' => $types]);
+    }
+
     public function error404() {
         $this->show('error404');
     }

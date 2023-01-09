@@ -121,3 +121,21 @@ table {
 p {
     text-align: center;
 }
+
+/* TYPES LIST PAGE */
+#types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#types a {
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    width: 12em;
+    padding: 1.3em;
+    text-align: center;
+}
