@@ -24,3 +24,7 @@ Créer un pokedex avec les pokemons de 1ère génération :
 - Type Listing = listing des pokemons du type selectionné
 
 # Screenshots
+![homepage](public/screenshots/home.png)
+![details](public/screenshots/details.png)
+![types](public/screenshots/types.png)
+![type_listing](public/screenshots/type_listing.png)
